@@ -6,7 +6,7 @@ directory = 'images/'
 new_directory = '/opt/icons/'
 for file in os.listdir(directory):
   f = os.path.join(directory, file)
-  if .DS_Store  not in f:
+  if '.DS_Store'  not in f:
     with Image.open(f) as img:
      img = img.convert('RGB')
      img = img.rotate(-90)
